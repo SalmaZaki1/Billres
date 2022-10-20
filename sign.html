@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            <!-- zone de connexion -->
+            
+            <form action="verification.php" method="POST">
+                <h1>Authentication</h1>
+                <img src="user.png" style="width: 5%"> <label><b>Login</b></label>
+                <input type="text" placeholder="Entrer you login" name="username" required>
+
+                <img src="password.png" style="width: 5%"> <label><b>Password</b></label>
+                <input type="password" placeholder="Entrer your password" name="password" required>
+
+                <img src="plein.png" style="width: 5%"> <label><b>User</b></label>
+                <select><option>Editeur</option>
+                        <option>Auteur</option>
+                        <option>Reviewer</option>
+                </select><br>
+                <input type="submit" id='submit' value='LOGIN' >
+                <input type="submit" id='inscription' value='CREATE AN ACCOUNT' >
+                <script>
+                <?php
+                if(isset($_GET['erreur'])){
+                    $err = $_GET['erreur'];
+                    if($err==1 || $err==2)
+                        echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+                }
+                ?>
+            </script>
+            </form>
+        </div>
+    </body>
+</html>

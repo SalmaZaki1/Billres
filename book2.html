@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">BillRes</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active" ><a href="PFA2.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" style="margin-left: 380%">Search</a></li>
+        <li><input type="text" placeholder=" Rechercher un article, auteur... " style="margin-top: 7%;margin-left: 150%;width: 150%"></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<img src="info.png" style="width:20%;margin-left:11%;margin-top: 5%" alt="Image" > 
+<fieldset style="margin-top: -18%;margin-left: 40%"><legend ><h2 style="background-color: #F5CBA7"><b>Détails sur le produit</b></h2></legend>
+<p style="margin-top: 1%">
+<b>Éditeur</b> ‏ : ‎ Editions Cyberdéfenseur (5 avril 2020)<br>
+<b>Auteur</b> 	:Lucas Sztandarowski<br>
+<b>Langue</b> ‏ : ‎ Français<br>
+<b>Broché</b> ‏ ‏  : ‎ 370 pages<br>
+<b>Poids de l'article</b> ‏ ‏ : ‎ 544 g<br>
+<b>Dimensions</b> ‏ ‏ : ‎ 15.24 x 2.36 x 22.86 cm
+</p>
+<h2 style="background-color: #F5CBA7 "><b>Resume :</b></h2>
+<hr style="margin-top: 1%"></hr><p>Lucas Sztandarowski a une histoire unique.<br>
+Initialement juriste, il a obtenu avec succès des certifications
+de développement web et logiciels a un apprentissage en autodidacte 
+tout en poursuivant ses études de droit.<br>
+Il a par la suite décroché des certifications en marketing numérique.
+Connu dans le monde de la lutte contre la cybercriminalité pour son livre “La véritable cybercriminalité” et son blog Cyberdefenseur.<br> Il supervise désormais les infrastructures informatiques du cabinet juridique international Eternos Corporation <br>tout en prodiguant des conseils juridiques en droit pénal.<br>
+
+"Le développement de sites web et de logiciels me passionne depuis toujours. Mon rêve d'enfant étant de devenir juriste, j'ai réussi à combiner les deux domaines."
+
+Grâce à une étude approfondie du cybercrime, il a réussi à acquérir des compétences rares pour contrer cette menace inévitable de nos jours.</p>
+</fieldset>
+</body>
+</html>
